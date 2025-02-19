@@ -18,17 +18,17 @@
 ## 📥 Installation
 
 ```bash
-npm install kick.api
+npm install @botk4cp3r/kick.jsapi
 # or
-yarn add kick.api
+yarn add @botk4cp3r/kick.js
 # or
-pnpm add kick.api
+pnpm add @botk4cp3r/kick.js
 ```
 
 ## 🚀 Quick Start
 
 ```javascript
-const { KickClient } = require('kick.api');
+const { KickClient } = require('@botk4cp3r/kick.js');
 
 // Create client instance
 const client = new KickClient({
@@ -398,7 +398,7 @@ import {
     ChatMessageOptions,
     ChannelUpdateOptions,
     WebhookEventType
-} from 'kick.api';
+} from '@botk4cp3r/kick.js';
 
 // Client with typed options
 const client = new KickClient({
@@ -425,7 +425,7 @@ client.on('chatMessage', (message: ChatMessage) => {
 
 ### Chat Bot Example
 ```javascript
-const { KickClient } = require('kick.api');
+const { KickClient } = require('@botk4cp3r/kick.js');
 
 const client = new KickClient({
     token: 'your-api-token',
