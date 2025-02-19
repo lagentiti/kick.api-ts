@@ -1,7 +1,7 @@
 # Kick.com API Client
 
-[![NPM Version](https://img.shields.io/npm/v/kick.api)](https://www.npmjs.com/package/kick.api)
-[![License](https://img.shields.io/npm/l/kick.api)](https://github.com/BOT-K4CP3R/kick.api/blob/main/LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/@botk4cp3r/kick.js)](https://www.npmjs.com/package/@botk4cp3r/kick.js)
+[![License](https://img.shields.io/npm/l/@botk4cp3r/kick.js)](https://github.com/BOT-K4CP3R/kick.api/blob/main/LICENSE)
 
 ## 📋 Table of Contents
 - [Installation](#-installation)
