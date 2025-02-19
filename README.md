@@ -6,7 +6,6 @@
 ## 📋 Table of Contents
 - [Installation](#-installation)
 - [Quick Start](#-quick-start)
-- [Authentication](#-authentication)
 - [Chat System](#-chat-system)
 - [Webhook Events](#-webhook-events)
 - [Channel Management](#-channel-management)
