@@ -1,7 +1,7 @@
 {
-  "name": "kick.api",
+  "name": "@botk4cp3r/kick.js",
   "version": "1.0.0",
-  "description": "kick api package",
+  "description": "Node.js client for Kick.com API",
   "main": "index.js",
   "repository": {
     "type": "git",
