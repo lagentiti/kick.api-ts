@@ -1,6 +1,6 @@
 {
   "name": "@botk4cp3r/kick.js",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Node.js client for Kick.com API",
   "main": "index.js",
   "repository": {
