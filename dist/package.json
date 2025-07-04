@@ -1,8 +1,12 @@
 {
   "name": "@lagent_titi/kick.js-ts",
   "version": "1.0.1",
-  "description": "Node.js typescript client for Kick.com API",
-  "main": "index.ts",
+  "description": "Node.js TypeScript client for Kick.com API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lagentiti/kick.api-ts.git"
@@ -34,6 +38,7 @@
     "dev": "ts-node src/index.ts"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
