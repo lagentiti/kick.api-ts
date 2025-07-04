@@ -1,0 +1,38 @@
+{
+  "name": "@lagent_titi/kick.js-ts",
+  "version": "1.0.1",
+  "description": "Node.js typescript client for Kick.com API",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lagentiti/kick.api-ts.git"
+  },
+  "keywords": [
+    "kick",
+    "kickapi",
+    "kickcom",
+    "api"
+  ],
+  "author": "botk4cp3r",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BOT-K4CP3R/kick.api/issues"
+  },
+  "homepage": "https://github.com/BOT-K4CP3R/kick.api#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
