@@ -18,7 +18,8 @@
 ## 📥 Installation
 
 ```bash
-npm install --save-dev @lagent_titi/kick.api-ts```
+npm install --save-dev @lagent_titi/kick.api-ts
+```
 
 ## 🚀 Quick Start
 
