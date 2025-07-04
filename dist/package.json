@@ -20,9 +20,9 @@
   "author": "botk4cp3r",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BOT-K4CP3R/kick.api/issues"
+    "url": "https://github.com/lagentiti/kick.api-ts/issues"
   },
-  "homepage": "https://github.com/BOT-K4CP3R/kick.api#readme",
+  "homepage": "https://github.com/lagentiti/kick.api-ts#readme",
   "dependencies": {
     "express": "^4.21.2"
   },
