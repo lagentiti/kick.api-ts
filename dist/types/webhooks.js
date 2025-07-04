@@ -1,13 +1,17 @@
-export const WEBHOOK_TYPES = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.WEBHOOK_TYPES = void 0;
+exports.parseWebhookPayload = parseWebhookPayload;
+exports.WEBHOOK_TYPES = {
     CHAT_MESSAGE: 'chat.message.sent',
     CHANNEL_FOLLOWED: 'channel.followed',
     SUBSCRIPTION_RENEWAL: 'channel.subscription.renewal',
     SUBSCRIPTION_GIFTS: 'channel.subscription.gifts',
     SUBSCRIPTION_NEW: 'channel.subscription.new'
 };
-export function parseWebhookPayload(type, payload) {
+function parseWebhookPayload(type, payload) {
     switch (type) {
-        case WEBHOOK_TYPES.CHAT_MESSAGE:
+        case exports.WEBHOOK_TYPES.CHAT_MESSAGE:
             return {
                 messageId: payload.message_id,
                 broadcaster: {
@@ -28,13 +32,13 @@ export function parseWebhookPayload(type, payload) {
                 },
                 content: payload.content,
                 emotes: Array.isArray(payload.emotes)
-                    ? payload.emotes.map((emote) => ({
+                    ? payload.emotes.map(function (emote) { return ({
                         emoteId: emote.emote_id,
                         positions: emote.positions
-                    }))
+                    }); })
                     : null
             };
-        case WEBHOOK_TYPES.CHANNEL_FOLLOWED:
+        case exports.WEBHOOK_TYPES.CHANNEL_FOLLOWED:
             return {
                 broadcaster: {
                     isAnonymous: payload.broadcaster.is_anonymous,
@@ -53,8 +57,8 @@ export function parseWebhookPayload(type, payload) {
                     channelSlug: payload.follower.channel_slug
                 }
             };
-        case WEBHOOK_TYPES.SUBSCRIPTION_RENEWAL:
-        case WEBHOOK_TYPES.SUBSCRIPTION_NEW:
+        case exports.WEBHOOK_TYPES.SUBSCRIPTION_RENEWAL:
+        case exports.WEBHOOK_TYPES.SUBSCRIPTION_NEW:
             return {
                 broadcaster: {
                     isAnonymous: payload.broadcaster.is_anonymous,
@@ -75,7 +79,7 @@ export function parseWebhookPayload(type, payload) {
                 duration: payload.duration,
                 createdAt: new Date(payload.created_at)
             };
-        case WEBHOOK_TYPES.SUBSCRIPTION_GIFTS:
+        case exports.WEBHOOK_TYPES.SUBSCRIPTION_GIFTS:
             return {
                 broadcaster: {
                     isAnonymous: payload.broadcaster.is_anonymous,
@@ -95,14 +99,14 @@ export function parseWebhookPayload(type, payload) {
                         profilePicture: payload.gifter.profile_picture,
                         channelSlug: payload.gifter.channel_slug
                     },
-                giftees: payload.giftees.map((giftee) => ({
+                giftees: payload.giftees.map(function (giftee) { return ({
                     isAnonymous: giftee.is_anonymous,
                     userId: giftee.user_id,
                     username: giftee.username,
                     isVerified: giftee.is_verified,
                     profilePicture: giftee.profile_picture,
                     channelSlug: giftee.channel_slug
-                })),
+                }); }),
                 createdAt: new Date(payload.created_at)
             };
         default:

@@ -1,6 +1,6 @@
 {
   "name": "@lagent_titi/kick.js-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js TypeScript client for Kick.com API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,8 +33,8 @@
     "typescript": "^5.8.3"
   },
   "scripts": {
-    "build": "tsc && cpx \"package.json\" dist && cpx \"README.md\" dist",
-    "start": "node dist/index.js",
+"build": "tsc && cpx \"package.json\" dist && cpx \"README.md\" dist",
+"start": "node dist/index.js",
     "dev": "ts-node src/index.ts"
   },
   "publishConfig": {

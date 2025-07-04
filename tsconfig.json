@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "module": "ESNext",
-    "target": "ES2017",
-    "declaration": true,
-    "declarationDir": "dist",
-    "moduleResolution": "node",
+    "target": "ES5", // Ou une version compatible avec votre environnement
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "rootDir": "./",
     "esModuleInterop": true,
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["*.ts", "**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["*.ts"],
+  "exclude": ["node_modules"]
 }
