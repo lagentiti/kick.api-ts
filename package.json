@@ -2,7 +2,7 @@
   "name": "@botk4cp3r/kick.js",
   "version": "1.0.1",
   "description": "Node.js client for Kick.com API",
-  "main": "index.js",
+  "main": "index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BOT-K4CP3R/kick.api.git"
@@ -21,5 +21,15 @@
   "homepage": "https://github.com/BOT-K4CP3R/kick.api#readme",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
   }
 }
